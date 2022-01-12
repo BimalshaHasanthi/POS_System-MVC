@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="logInContext" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SelectLoginFormController">
+   <children>
+      <AnchorPane prefHeight="1080.0" prefWidth="1920.0" style="-fx-background-color: white;">
+         <children>
+            <ImageView fitHeight="1080.0" fitWidth="1949.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/background2.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="449.0" fitWidth="745.0" layoutX="208.0" layoutY="297.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/login.jpg" />
+               </image>
+            </ImageView>
+            <JFXTextField fx:id="txtUserName" focusColor="#4241b9" labelFloat="true" layoutX="1085.0" layoutY="489.0" prefHeight="65.0" prefWidth="397.0" promptText="User Name" unFocusColor="#4241b9">
+               <font>
+                  <Font name="Montserrat ExtraBold" size="25.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField focusColor="#4241b9" labelFloat="true" layoutX="1093.0" layoutY="594.0" prefHeight="65.0" prefWidth="397.0" promptText="Password" unFocusColor="#4241b9">
+               <font>
+                  <Font name="Montserrat ExtraBold" size="25.0" />
+               </font>
+            </JFXTextField>
+            <JFXButton buttonType="RAISED" layoutX="1189.0" layoutY="714.0" onAction="#logInOnAction" prefHeight="65.0" prefWidth="205.0" style="-fx-background-radius: 50; -fx-background-color: #4241b9;" text="Login" textFill="WHITE">
+               <font>
+                  <Font name="Montserrat SemiBold" size="30.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <ImageView fitHeight="231.0" fitWidth="538.0" layoutX="1023.0" layoutY="180.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/logo2.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="91.0" layoutY="985.0" text="Version 1.0.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

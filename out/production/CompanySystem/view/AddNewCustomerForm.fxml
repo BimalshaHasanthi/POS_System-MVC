@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddNewCustomerFormController">
+   <children>
+      <AnchorPane fx:id="addNewCustomerContext" layoutX="1.0" layoutY="10.0" prefHeight="622.0" prefWidth="618.0">
+         <children>
+            <Label layoutX="126.0" layoutY="44.0" text="Add New Customer">
+               <font>
+                  <Font name="Montserrat SemiBold" size="30.0" />
+               </font>
+            </Label>
+            <Label layoutX="52.0" layoutY="110.0" text="Customer Id  : ">
+               <font>
+                  <Font name="Montserrat Medium" size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="50.0" layoutY="173.0" text="Customer Title  :">
+               <font>
+                  <Font name="Montserrat Medium" size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="50.0" layoutY="235.0" text="Customer Name  : ">
+               <font>
+                  <Font name="Montserrat Medium" size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="50.0" layoutY="292.0" text="Customer Address  : ">
+               <font>
+                  <Font name="Montserrat Medium" size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="52.0" layoutY="349.0" text="Customer City : ">
+               <font>
+                  <Font name="Montserrat Medium" size="25.0" />
+               </font>
+            </Label>
+            <JFXButton buttonType="RAISED" layoutX="345.0" layoutY="527.0" onAction="#AddCustomerOnAction" prefHeight="43.0" prefWidth="174.0" style="-fx-background-radius: 50; -fx-background-color: white;" text="Save">
+               <font>
+                  <Font size="25.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXTextField fx:id="txtCustomerId" layoutX="253.0" layoutY="110.0" prefHeight="32.0" prefWidth="271.0" />
+            <JFXTextField fx:id="txtCustomerName" layoutX="299.0" layoutY="235.0" prefHeight="32.0" prefWidth="225.0" />
+            <JFXTextField fx:id="txtCustomerTitle" layoutX="276.0" layoutY="173.0" prefHeight="32.0" prefWidth="248.0" />
+            <JFXTextField fx:id="txtCustomerAddress" layoutX="323.0" layoutY="292.0" prefHeight="32.0" prefWidth="201.0" />
+            <JFXTextField fx:id="txtCustomerCity" layoutX="253.0" layoutY="349.0" prefHeight="32.0" prefWidth="271.0" />
+            <Label layoutX="52.0" layoutY="410.0" text="Customer Province  : ">
+               <font>
+                  <Font name="Montserrat Medium" size="25.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="txtCustomerProvince" layoutX="340.0" layoutY="410.0" prefHeight="32.0" prefWidth="184.0" />
+            <Label layoutX="52.0" layoutY="461.0" text="Customer Postal Code  : ">
+               <font>
+                  <Font name="Montserrat Medium" size="25.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="txtCPostalCode" layoutX="368.0" layoutY="461.0" prefHeight="32.0" prefWidth="156.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

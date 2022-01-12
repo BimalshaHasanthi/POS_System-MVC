@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="1080.0" prefWidth="1920.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ManageOrderFormController">
+   <children>
+      <AnchorPane fx:id="manageOrderContext" prefHeight="1080.0" prefWidth="1920.0" style="-fx-background-color: white;">
+         <children>
+            <ImageView fitHeight="1088.0" fitWidth="1950.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/Background12.png" />
+               </image>
+            </ImageView>
+            <AnchorPane fx:id="loadSearchFormContext" layoutX="14.0" layoutY="248.0" prefHeight="587.0" prefWidth="667.0" />
+            <AnchorPane fx:id="OrderDetailContext" layoutX="786.0" layoutY="228.0" prefHeight="846.0" prefWidth="1136.0">
+               <children>
+                  <Label layoutX="55.0" layoutY="31.0" prefHeight="50.0" prefWidth="326.0" text="Order Details">
+                     <font>
+                        <Font name="Montserrat ExtraBold" size="30.0" />
+                     </font>
+                  </Label>
+                  <Separator layoutX="304.0" layoutY="48.0" prefHeight="16.0" prefWidth="730.0" />
+                  <JFXButton buttonType="RAISED" layoutX="547.0" layoutY="178.0" onAction="#removeOrderOnAction" prefHeight="57.0" prefWidth="291.0" style="-fx-background-radius: 50; -fx-background-color: #4241b9;" text="Remove Order" textFill="WHITE">
+                     <font>
+                        <Font name="Montserrat Medium" size="30.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" layoutX="211.0" layoutY="178.0" onAction="#modifyOrderOnAction" prefHeight="57.0" prefWidth="291.0" style="-fx-background-radius: 50; -fx-background-color: #4241b9;" text="Modify Order" textFill="WHITE">
+                     <font>
+                        <Font name="Montserrat Medium" size="30.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+               </children>
+            </AnchorPane>
+            <ImageView fitHeight="184.0" fitWidth="459.0" layoutX="53.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/logo2.png" />
+               </image>
+            </ImageView>
+            <JFXButton buttonType="RAISED" layoutX="557.0" layoutY="77.0" onAction="#manageOrderOnAction" prefHeight="49.0" prefWidth="236.0" style="-fx-background-color: white; -fx-background-radius: 50;" text="Manage Order">
+               <font>
+                  <Font name="Montserrat SemiBold" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="557.0" layoutY="159.0" onAction="#customerOrderOnAction" prefHeight="49.0" prefWidth="236.0" style="-fx-background-color: white; -fx-background-radius: 50;" text="Customer Order">
+               <font>
+                  <Font name="Montserrat SemiBold" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="166.0" layoutY="927.0" onAction="#logOutOnAction" prefHeight="49.0" prefWidth="149.0" style="-fx-background-color: #4241b9; -fx-background-radius: 25;" text="Log Out" textFill="WHITE">
+               <font>
+                  <Font name="Montserrat Medium" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <Label layoutX="189.0" layoutY="880.0" text="Cashier">
+               <font>
+                  <Font name="Montserrat SemiBold" size="30.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="87.0" fitWidth="96.0" layoutX="63.0" layoutY="884.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/user1.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="63.0" layoutY="993.0" text="Version 1.0.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="1080.0" prefWidth="1920.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ManageItemFormController">
+   <children>
+      <AnchorPane fx:id="dashBoardContext" prefHeight="1080.0" prefWidth="1920.0" style="-fx-background-color: white;">
+         <children>
+            <ImageView fitHeight="1105.0" fitWidth="1943.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/Background12.png" />
+               </image>
+            </ImageView>
+            <AnchorPane fx:id="searchContext" layoutX="22.0" layoutY="248.0" prefHeight="629.0" prefWidth="625.0" />
+            <AnchorPane fx:id="loadDetailContext" layoutX="842.0" layoutY="209.0" prefHeight="811.0" prefWidth="1064.0" style="-fx-background-color: white;">
+               <children>
+                  <AnchorPane layoutX="5.0" layoutY="4.0" prefHeight="808.0" prefWidth="1063.0">
+                     <children>
+                        <Label layoutX="51.0" layoutY="22.0" text="Manage Item">
+                           <font>
+                              <Font name="Montserrat ExtraBold" size="35.0" />
+                           </font>
+                        </Label>
+                        <Separator layoutX="327.0" layoutY="35.0" prefHeight="18.0" prefWidth="715.0" />
+                        <JFXButton buttonType="RAISED" layoutX="60.0" layoutY="160.0" onAction="#addNewItemOnAction" prefWidth="295.0" style="-fx-background-radius: 50; -fx-background-color: #4241b9;" text="Add New Item" textFill="WHITE">
+                           <font>
+                              <Font name="Montserrat Medium" size="30.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </JFXButton>
+                        <JFXButton buttonType="RAISED" layoutX="728.0" layoutY="160.0" onAction="#removeItemOnAction" prefHeight="57.0" prefWidth="261.0" style="-fx-background-radius: 50; -fx-background-color: #4241b9;" text="Remove Item" textFill="WHITE">
+                           <font>
+                              <Font name="Montserrat Medium" size="30.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </JFXButton>
+                        <JFXButton buttonType="RAISED" layoutX="423.0" layoutY="160.0" onAction="#modifyItemOnAction" prefHeight="57.0" prefWidth="246.0" style="-fx-background-radius: 50; -fx-background-color: #4241b9;" text="Modify Item" textFill="WHITE">
+                           <font>
+                              <Font name="Montserrat Medium" size="30.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </JFXButton>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+            <JFXButton buttonType="RAISED" layoutX="557.0" layoutY="77.0" onAction="#systemReportOnAction" prefHeight="49.0" prefWidth="236.0" style="-fx-background-color: white; -fx-background-radius: 50;" text="System Report">
+               <font>
+                  <Font name="Montserrat SemiBold" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="557.0" layoutY="159.0" onAction="#manageItemOnAction" prefHeight="49.0" prefWidth="236.0" style="-fx-background-color: white; -fx-background-radius: 50;" text="Manage Item">
+               <font>
+                  <Font name="Montserrat SemiBold" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <ImageView fitHeight="184.0" fitWidth="459.0" layoutX="53.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/logo2.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <JFXButton buttonType="RAISED" layoutX="156.0" layoutY="917.0" onAction="#logOutOnAction" prefHeight="49.0" prefWidth="149.0" style="-fx-background-color: #4241b9; -fx-background-radius: 25;" text="Log Out" textFill="WHITE">
+         <font>
+            <Font name="Montserrat Medium" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label layoutX="179.0" layoutY="870.0" text="Admin">
+         <font>
+            <Font name="Montserrat SemiBold" size="30.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="87.0" fitWidth="96.0" layoutX="53.0" layoutY="874.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/user1.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="53.0" layoutY="983.0" text="Version 1.0.0" />
+   </children>
+</AnchorPane>

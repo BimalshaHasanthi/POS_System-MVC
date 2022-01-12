@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="555.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddNewItemFormController">
+   <children>
+      <AnchorPane prefHeight="656.0" prefWidth="600.0">
+         <children>
+            <Label layoutX="126.0" layoutY="44.0" text="Register New Item">
+               <font>
+                  <Font name="Montserrat SemiBold" size="35.0" />
+               </font>
+            </Label>
+            <Label layoutX="52.0" layoutY="137.0" text="Item Code  : ">
+               <font>
+                  <Font name="Montserrat Medium" size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="50.0" layoutY="200.0" text="Description  : ">
+               <font>
+                  <Font name="Montserrat Medium" size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="50.0" layoutY="262.0" text="Pack Size  : ">
+               <font>
+                  <Font name="Montserrat Medium" size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="50.0" layoutY="319.0" text="Unit Price  : ">
+               <font>
+                  <Font name="Montserrat Medium" size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="52.0" layoutY="376.0" text="Qty On Hand  : ">
+               <font>
+                  <Font name="Montserrat Medium" size="25.0" />
+               </font>
+            </Label>
+            <JFXButton buttonType="RAISED" layoutX="350.0" layoutY="512.0" onAction="#addItemOnAction" prefHeight="43.0" prefWidth="174.0" style="-fx-background-radius: 50; -fx-background-color: white;" text="Save">
+               <font>
+                  <Font size="25.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXTextField fx:id="txtItemCode" layoutX="228.0" layoutY="137.0" prefHeight="32.0" prefWidth="296.0" />
+            <JFXTextField fx:id="txtPackSize" layoutX="217.0" layoutY="262.0" prefHeight="32.0" prefWidth="307.0" />
+            <JFXTextField fx:id="txtDescription" layoutX="244.0" layoutY="200.0" prefHeight="32.0" prefWidth="280.0" />
+            <JFXTextField fx:id="txtUnitPrice" layoutX="217.0" layoutY="319.0" prefHeight="32.0" prefWidth="307.0" />
+            <JFXTextField fx:id="txtQtyOnHand" layoutX="276.0" layoutY="376.0" prefHeight="32.0" prefWidth="248.0" />
+            <Label layoutX="52.0" layoutY="437.0" text="Discount Percentage  : ">
+               <font>
+                  <Font name="Montserrat Medium" size="25.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="txtDiscount" layoutX="365.0" layoutY="437.0" prefHeight="32.0" prefWidth="159.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
